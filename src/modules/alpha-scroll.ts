@@ -20,22 +20,24 @@ import * as Transform from 'alloytouch-transformjs';
 @Component({
     selector: 'ion-alpha-scroll',
     template: `
-  <section class="alpha-list-wrapper" #wrapper>
-	  <ion-list class="ion-alpha-list" #list>
-		<ion-item-divider id="scroll-letter-↑" style="display:none" *ngIf="headerTemplate!=null">↑</ion-item-divider>
-		<ng-template [ngTemplateOutlet]="headerTemplate" ></ng-template>
-	      <div *ngFor="let row of sortedItems">
-	        <ion-item-divider id="scroll-letter-{{item.letter}}">{{item.letter}}</ion-item-divider>
-	        <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{'item': item, 'currentPageClass': currentPageClass}">
-	        </ng-template>
-	      </div>
-	    </ion-list>
-    </section>
-    <ul class="ion-alpha-sidebar" [ngStyle]="calculateDimensionsForSidebar()" #sidebar>
-      <li *ngFor="let alpha of alphabet" [hidden]="!alpha.isActive" [class]="setAlphaClass(alpha)">
-        <a>{{alpha.letter}}</a>
-      </li>
-    </ul>`
+        <section class="alpha-list-wrapper" #wrapper>
+            <ion-list class="ion-alpha-list" #list>
+                <ion-item-divider id="scroll-letter-↑" style="display:none" *ngIf="headerTemplate!=null">↑</ion-item-divider>
+                <ng-template [ngTemplateOutlet]="headerTemplate"></ng-template>
+                <div *ngFor="let row of sortedItems">
+                    <ion-item-divider id="scroll-letter-{{row.letter}}">{{row.letter}}</ion-item-divider>
+                    <ion-col *ngFor="let item of row.groupItems" col-6>
+                        <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{'item': item, 'currentPageClass': currentPageClass}">
+                        </ng-template>
+                    </ion-col>
+                </div>
+            </ion-list>
+        </section>
+        <ul class="ion-alpha-sidebar" [ngStyle]="calculateDimensionsForSidebar()" #sidebar>
+            <li *ngFor="let alpha of alphabet" [hidden]="!alpha.isActive" [class]="setAlphaClass(alpha)">
+                <a>{{alpha.letter}}</a>
+            </li>
+        </ul>`
 })
 export class AlphaScroll implements OnInit, OnChanges, OnDestroy {
     @ViewChild('wrapper') mainWrapper: ElementRef;

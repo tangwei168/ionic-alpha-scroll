@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fa9bfe9-bc05-4b09-82b9-f9633f3cd0e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modules/alpha-scroll.ts" afterPath="$PROJECT_DIR$/src/modules/alpha-scroll.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="alpha-scroll.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modules/alpha-scroll.module.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -28,16 +26,17 @@
       <file leaf-file-name="alpha-scroll.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modules/alpha-scroll.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="182" column="85" lean-forward="false" selection-start-line="182" selection-start-column="85" selection-end-line="182" selection-end-column="85" />
+            <state relative-caret-position="532">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding>
-                <marker date="1517885389329" expanded="true" signature="484:1056" ph="..." />
-                <marker date="1517885389329" expanded="true" signature="527:1041" ph="..." />
-                <marker date="1517885389329" expanded="false" signature="577:589" ph="..." />
-                <marker date="1517885389329" expanded="true" signature="751:1024" ph="..." />
-                <marker date="1517885389329" expanded="true" signature="986:1010" ph="..." />
-                <marker date="1517885389329" expanded="true" signature="1144:1298" ph="..." />
-                <marker date="1517885389329" expanded="true" signature="1244:1288" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="490:1269" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="542:1250" ph="..." />
+                <marker date="1517889845961" expanded="false" signature="606:618" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="802:1226" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="980:1203" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="1133:1172" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="1361:1539" ph="..." />
+                <marker date="1517889845961" expanded="true" signature="1467:1525" ph="..." />
               </folding>
             </state>
           </provider>
@@ -66,6 +65,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/aot/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="1" />
@@ -88,6 +91,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,10 +122,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,11 +238,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517885304893</updated>
       <workItem from="1517885306038" duration="84000" />
+      <workItem from="1517889778338" duration="73000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84000" />
+    <option name="totallyTimeSpent" value="157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="3438" height="1398" extended-state="0" />
@@ -258,7 +262,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11752516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11811723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -299,16 +303,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/alpha-scroll.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="182" column="85" lean-forward="false" selection-start-line="182" selection-start-column="85" selection-end-line="182" selection-end-column="85" />
+        <state relative-caret-position="3458">
+          <caret line="182" column="36" lean-forward="true" selection-start-line="182" selection-start-column="36" selection-end-line="182" selection-end-column="36" />
           <folding>
-            <marker date="1517885389329" expanded="true" signature="484:1056" ph="..." />
-            <marker date="1517885389329" expanded="true" signature="527:1041" ph="..." />
-            <marker date="1517885389329" expanded="false" signature="577:589" ph="..." />
-            <marker date="1517885389329" expanded="true" signature="751:1024" ph="..." />
-            <marker date="1517885389329" expanded="true" signature="986:1010" ph="..." />
-            <marker date="1517885389329" expanded="true" signature="1144:1298" ph="..." />
-            <marker date="1517885389329" expanded="true" signature="1244:1288" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="490:1269" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="542:1250" ph="..." />
+            <marker date="1517889845961" expanded="false" signature="606:618" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="802:1226" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="980:1203" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="1133:1172" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="1361:1539" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="1467:1525" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/alpha-scroll.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/alpha-scroll.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <marker date="1517889845961" expanded="true" signature="490:1269" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="542:1250" ph="..." />
+            <marker date="1517889845961" expanded="false" signature="606:618" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="802:1226" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="980:1203" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="1133:1172" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="1361:1539" ph="..." />
+            <marker date="1517889845961" expanded="true" signature="1467:1525" ph="..." />
           </folding>
         </state>
       </provider>
