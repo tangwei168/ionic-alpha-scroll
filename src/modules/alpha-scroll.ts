@@ -24,13 +24,13 @@ import * as Transform from 'alloytouch-transformjs';
             <ion-list class="ion-alpha-list" #list>
                 <ion-item-divider id="scroll-letter-↑" style="display:none" *ngIf="headerTemplate!=null">↑</ion-item-divider>
                 <ng-template [ngTemplateOutlet]="headerTemplate"></ng-template>
-                <div *ngFor="let row of sortedItems">
+                <ion-row *ngFor="let row of sortedItems">
                     <ion-item-divider id="scroll-letter-{{row.letter}}">{{row.letter}}</ion-item-divider>
                     <ion-col *ngFor="let item of row.groupItems" col-6>
                         <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{'item': item, 'currentPageClass': currentPageClass}">
                         </ng-template>
                     </ion-col>
-                </div>
+                </ion-row>
             </ion-list>
         </section>
         <ul class="ion-alpha-sidebar" [ngStyle]="calculateDimensionsForSidebar()" #sidebar>
