@@ -27,7 +27,8 @@ var AlphaScroll = (function () {
     };
     AlphaScroll.prototype.ngOnChanges = function () {
         var _this = this;
-        var sortedListData = this.orderBy.transform(this.listData, [this.key]);
+        // 先对传入的listData排序 避免结果顺序乱掉
+        var sortedListData = this.orderBy.transform(_.orderBy(this.listData, function (x) { return x.initial; }), [this.key]);
         var groupItems = _.groupBy(sortedListData, function (item) {
             var letter = _.get(item, _this.key);
             return letter.toUpperCase().charAt(0);
@@ -124,7 +125,7 @@ var AlphaScroll = (function () {
     AlphaScroll.prototype.unwindGroup = function (groupItems) {
         var result = [];
         for (var letter in groupItems) {
-            result = result.concat([{ isDivider: true, letter: letter }].concat(groupItems[letter]));
+            result = result.concat([{ letter: letter, groupItems: groupItems[letter] }]);
         }
         return result;
     };
@@ -150,7 +151,7 @@ export { AlphaScroll };
 AlphaScroll.decorators = [
     { type: Component, args: [{
                 selector: 'ion-alpha-scroll',
-                template: "\n  <section class=\"alpha-list-wrapper\" #wrapper>\n\t  <ion-list class=\"ion-alpha-list\" #list>\n\t\t<ion-item-divider id=\"scroll-letter-\u2191\" style=\"display:none\" *ngIf=\"headerTemplate!=null\">\u2191</ion-item-divider>\n\t\t<ng-template [ngTemplateOutlet]=\"headerTemplate\" ></ng-template>\n\t      <div *ngFor=\"let item of sortedItems\">\n\t        <ion-item-divider id=\"scroll-letter-{{item.letter}}\" *ngIf=\"item.isDivider\">{{item.letter}}</ion-item-divider>\n\t        <ng-template [ngTemplateOutlet]=\"itemTemplate\" [ngOutletContext]=\"{'item': item, 'currentPageClass': currentPageClass}\" *ngIf=\"!item.isDivider\">\n\t        </ng-template>\n\t      </div>\n\t    </ion-list>\n    </section>\n    <ul class=\"ion-alpha-sidebar\" [ngStyle]=\"calculateDimensionsForSidebar()\" #sidebar>\n      <li *ngFor=\"let alpha of alphabet\" [hidden]=\"!alpha.isActive\" [class]=\"setAlphaClass(alpha)\">\n        <a>{{alpha.letter}}</a>\n      </li>\n    </ul>"
+                template: "\n  <section class=\"alpha-list-wrapper\" #wrapper>\n\t  <ion-list class=\"ion-alpha-list\" #list>\n\t\t<ion-item-divider id=\"scroll-letter-\u2191\" style=\"display:none\" *ngIf=\"headerTemplate!=null\">\u2191</ion-item-divider>\n\t\t<ng-template [ngTemplateOutlet]=\"headerTemplate\" ></ng-template>\n\t      <div *ngFor=\"let row of sortedItems\">\n\t        <ion-item-divider id=\"scroll-letter-{{item.letter}}\">{{item.letter}}</ion-item-divider>\n\t        <ng-template [ngTemplateOutlet]=\"itemTemplate\" [ngTemplateOutletContext]=\"{'item': item, 'currentPageClass': currentPageClass}\">\n\t        </ng-template>\n\t      </div>\n\t    </ion-list>\n    </section>\n    <ul class=\"ion-alpha-sidebar\" [ngStyle]=\"calculateDimensionsForSidebar()\" #sidebar>\n      <li *ngFor=\"let alpha of alphabet\" [hidden]=\"!alpha.isActive\" [class]=\"setAlphaClass(alpha)\">\n        <a>{{alpha.letter}}</a>\n      </li>\n    </ul>"
             },] },
 ];
 /** @nocollapse */
