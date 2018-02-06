@@ -13,13 +13,14 @@ import * as import3 from 'ionic-angular/util/form';
 import * as import4 from 'ionic-angular/config/config';
 import * as import5 from 'ionic-angular/components/item/item-reorder';
 import * as import6 from 'ionic-angular/components/item/item-divider';
-import * as import7 from '@angular/common';
-import * as import8 from 'ionic-angular/components/list/list';
-import * as import9 from 'ionic-angular/platform/platform';
-import * as import10 from 'ionic-angular/gestures/gesture-controller';
-import * as import11 from 'ionic-angular/platform/dom-controller';
-import * as import12 from '../../../src/modules/alpha-scroll';
-import * as import13 from '../../../src/pipes/order-by';
+import * as import7 from 'ionic-angular/components/grid/col';
+import * as import8 from '@angular/common';
+import * as import9 from 'ionic-angular/components/list/list';
+import * as import10 from 'ionic-angular/platform/platform';
+import * as import11 from 'ionic-angular/gestures/gesture-controller';
+import * as import12 from 'ionic-angular/platform/dom-controller';
+import * as import13 from '../../../src/modules/alpha-scroll';
+import * as import14 from '../../../src/pipes/order-by';
 const styles_AlphaScroll:any[] = ([] as any[]);
 export const RenderType_AlphaScroll:import0.RendererType2 = import0.ɵcrt({
   encapsulation: 2,
@@ -75,13 +76,58 @@ function View_AlphaScroll_1(l:any):import0.ɵViewDefinition {
 function View_AlphaScroll_2(l:any):import0.ɵViewDefinition {
   return import0.ɵvid(0,[(l()(),import0.ɵand(0,(null as any),(null as any),0))],(null as any),(null as any));
 }
+function View_AlphaScroll_5(l:any):import0.ɵViewDefinition {
+  return import0.ɵvid(0,[(l()(),import0.ɵted((null as any),['\n                        ']))],(null as any),(null as any));
+}
 function View_AlphaScroll_4(l:any):import0.ɵViewDefinition {
-  return import0.ɵvid(0,[(l()(),import0.ɵted((null as any),['\n	        ']))],(null as any),(null as any));
+  return import0.ɵvid(0,[
+    (l()(),import0.ɵeld(0,(null as any),(null as any),6,'ion-col',[
+      [
+        'class',
+        'col'
+      ]
+      ,
+      [
+        'col-6',
+        ''
+      ]
+
+    ]
+    ,(null as any),(null as any),(null as any),(null as any),(null as any))),
+    import0.ɵdid(16384,(null as any),0,import7.Col,([] as any[]),(null as any),(null as any)),
+    (l()(),import0.ɵted((null as any),['\n                        '])),
+    (l()(),import0.ɵand(16777216,(null as any),(null as any),2,(null as any),View_AlphaScroll_5)),
+    import0.ɵdid(540672,(null as any),0,import8.NgTemplateOutlet,[import0.ViewContainerRef],{
+      ngTemplateOutletContext: [
+        0,
+        'ngTemplateOutletContext'
+      ]
+      ,
+      ngTemplateOutlet: [
+        1,
+        'ngTemplateOutlet'
+      ]
+
+    }
+    ,(null as any)),
+    import0.ɵpod([
+      'item',
+      'currentPageClass'
+    ]
+    ),
+    (l()(),import0.ɵted((null as any),['\n                    ']))
+  ]
+  ,(ck,v) => {
+    var co:any = v.component;
+    const currVal_0:any = ck(v,5,0,v.context.$implicit,co.currentPageClass);
+    const currVal_1:any = co.itemTemplate;
+    ck(v,4,0,currVal_0,currVal_1);
+  },(null as any));
 }
 function View_AlphaScroll_3(l:any):import0.ɵViewDefinition {
   return import0.ɵvid(0,[
-    (l()(),import0.ɵeld(0,(null as any),(null as any),13,'div',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import0.ɵted((null as any),['\n	        '])),
+    (l()(),import0.ɵeld(0,(null as any),(null as any),12,'div',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
+    (l()(),import0.ɵted((null as any),['\n                    '])),
       (l()(),import0.ɵeld(0,(null as any),(null as any),6,'ion-item-divider',[[
         'class',
         'item item-divider'
@@ -118,42 +164,31 @@ function View_AlphaScroll_3(l:any):import0.ɵViewDefinition {
       ''
     ]
     )),
-    (l()(),import0.ɵted((null as any),['\n	        '])),
-    (l()(),import0.ɵand(16777216,(null as any),(null as any),2,(null as any),View_AlphaScroll_4)),
-    import0.ɵdid(540672,(null as any),0,import7.NgTemplateOutlet,[import0.ViewContainerRef],{
-      ngTemplateOutletContext: [
-        0,
-        'ngTemplateOutletContext'
-      ]
-      ,
-      ngTemplateOutlet: [
-        1,
-        'ngTemplateOutlet'
-      ]
-
-    }
-    ,(null as any)),
-    import0.ɵpod([
-      'item',
-      'currentPageClass'
+    (l()(),import0.ɵted((null as any),['\n                    '])),
+    (l()(),import0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_AlphaScroll_4)),
+    import0.ɵdid(802816,(null as any),0,import8.NgForOf,[
+      import0.ViewContainerRef,
+      import0.TemplateRef,
+      import0.IterableDiffers
     ]
-    ),
-    (l()(),import0.ɵted((null as any),['\n	      ']))
+      ,{ngForOf: [
+        0,
+        'ngForOf'
+      ]
+    },(null as any)),
+    (l()(),import0.ɵted((null as any),['\n                ']))
   ]
   ,(ck,v) => {
-    var co:any = v.component;
-    const currVal_2:any = ck(v,12,0,co.item,co.currentPageClass);
-    const currVal_3:any = co.itemTemplate;
-    ck(v,11,0,currVal_2,currVal_3);
+    const currVal_2:any = v.context.$implicit.groupItems;
+    ck(v,11,0,currVal_2);
   },(ck,v) => {
-    var co:any = v.component;
-    const currVal_0:any = import0.ɵinlineInterpolate(1,'scroll-letter-',co.item.letter,'');
+    const currVal_0:any = import0.ɵinlineInterpolate(1,'scroll-letter-',v.context.$implicit.letter,'');
     ck(v,2,0,currVal_0);
-    const currVal_1:any = co.item.letter;
+    const currVal_1:any = v.context.$implicit.letter;
     ck(v,8,0,currVal_1);
   });
 }
-function View_AlphaScroll_5(l:any):import0.ɵViewDefinition {
+function View_AlphaScroll_6(l:any):import0.ɵViewDefinition {
   return import0.ɵvid(0,[
     (l()(),import0.ɵeld(0,(null as any),(null as any),4,'li',([] as any[]),[
       [
@@ -170,14 +205,14 @@ function View_AlphaScroll_5(l:any):import0.ɵViewDefinition {
 
     ]
     ,(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import0.ɵted((null as any),['\n        '])),
+    (l()(),import0.ɵted((null as any),['\n                '])),
     (l()(),import0.ɵeld(0,(null as any),(null as any),1,'a',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
     (l()(),import0.ɵted((null as any),[
       '',
       ''
     ]
     )),
-    (l()(),import0.ɵted((null as any),['\n      ']))
+    (l()(),import0.ɵted((null as any),['\n            ']))
   ]
   ,(null as any),(ck,v) => {
     var co:any = v.component;
@@ -193,7 +228,7 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
     import0.ɵqud(402653184,1,{mainWrapper: 0}),
     import0.ɵqud(402653184,2,{list: 0}),
     import0.ɵqud(402653184,3,{sidebar: 0}),
-    (l()(),import0.ɵted((null as any),['\n  '])),
+    (l()(),import0.ɵted((null as any),['\n        '])),
     (l()(),import0.ɵeld(0,[
       [
         1,
@@ -211,7 +246,7 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'alpha-list-wrapper'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import0.ɵted((null as any),['\n	  '])),
+    (l()(),import0.ɵted((null as any),['\n            '])),
     (l()(),import0.ɵeld(0,[
       [
         2,
@@ -229,18 +264,18 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'ion-alpha-list'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import0.ɵdid(16384,(null as any),0,import8.List,[
+    import0.ɵdid(16384,(null as any),0,import9.List,[
       import4.Config,
       import0.ElementRef,
       import0.Renderer,
-      import9.Platform,
-      import10.GestureController,
-      import11.DomController
+      import10.Platform,
+      import11.GestureController,
+      import12.DomController
     ]
     ,(null as any),(null as any)),
-    (l()(),import0.ɵted((null as any),['\n		'])),
+    (l()(),import0.ɵted((null as any),['\n                '])),
     (l()(),import0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_AlphaScroll_1)),
-    import0.ɵdid(16384,(null as any),0,import7.NgIf,[
+    import0.ɵdid(16384,(null as any),0,import8.NgIf,[
       import0.ViewContainerRef,
       import0.TemplateRef
     ]
@@ -249,16 +284,16 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'ngIf'
       ]
     },(null as any)),
-    (l()(),import0.ɵted((null as any),['\n		'])),
+    (l()(),import0.ɵted((null as any),['\n                '])),
     (l()(),import0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_AlphaScroll_2)),
-      import0.ɵdid(540672,(null as any),0,import7.NgTemplateOutlet,[import0.ViewContainerRef],{ngTemplateOutlet: [
+      import0.ɵdid(540672,(null as any),0,import8.NgTemplateOutlet,[import0.ViewContainerRef],{ngTemplateOutlet: [
         0,
         'ngTemplateOutlet'
       ]
     },(null as any)),
-    (l()(),import0.ɵted((null as any),['\n	      '])),
+    (l()(),import0.ɵted((null as any),['\n                '])),
     (l()(),import0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_AlphaScroll_3)),
-    import0.ɵdid(802816,(null as any),0,import7.NgForOf,[
+    import0.ɵdid(802816,(null as any),0,import8.NgForOf,[
       import0.ViewContainerRef,
       import0.TemplateRef,
       import0.IterableDiffers
@@ -268,9 +303,9 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'ngForOf'
       ]
     },(null as any)),
-    (l()(),import0.ɵted((null as any),['\n	    '])),
-    (l()(),import0.ɵted((null as any),['\n    '])),
-    (l()(),import0.ɵted((null as any),['\n    '])),
+    (l()(),import0.ɵted((null as any),['\n            '])),
+    (l()(),import0.ɵted((null as any),['\n        '])),
+    (l()(),import0.ɵted((null as any),['\n        '])),
     (l()(),import0.ɵeld(0,[
       [
         3,
@@ -288,7 +323,7 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'ion-alpha-sidebar'
       ]
     ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    import0.ɵdid(278528,(null as any),0,import7.NgStyle,[
+    import0.ɵdid(278528,(null as any),0,import8.NgStyle,[
       import0.KeyValueDiffers,
       import0.ElementRef,
       import0.Renderer
@@ -298,9 +333,9 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'ngStyle'
       ]
     },(null as any)),
-    (l()(),import0.ɵted((null as any),['\n      '])),
-    (l()(),import0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_AlphaScroll_5)),
-    import0.ɵdid(802816,(null as any),0,import7.NgForOf,[
+    (l()(),import0.ɵted((null as any),['\n            '])),
+    (l()(),import0.ɵand(16777216,(null as any),(null as any),1,(null as any),View_AlphaScroll_6)),
+    import0.ɵdid(802816,(null as any),0,import8.NgForOf,[
       import0.ViewContainerRef,
       import0.TemplateRef,
       import0.IterableDiffers
@@ -310,10 +345,10 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
         'ngForOf'
       ]
     },(null as any)),
-    (l()(),import0.ɵted((null as any),['\n    ']))
+    (l()(),import0.ɵted((null as any),['\n        ']))
   ]
   ,(ck,v) => {
-    var co:import12.AlphaScroll = v.component;
+    var co:import13.AlphaScroll = v.component;
     const currVal_0:any = (co.headerTemplate != (null as any));
     ck(v,10,0,currVal_0);
     const currVal_1:any = co.headerTemplate;
@@ -329,9 +364,9 @@ export function View_AlphaScroll_0(l:any):import0.ɵViewDefinition {
 function View_AlphaScroll_Host_0(l:any):import0.ɵViewDefinition {
   return import0.ɵvid(0,[
     (l()(),import0.ɵeld(0,(null as any),(null as any),1,'ion-alpha-scroll',([] as any[]),(null as any),(null as any),(null as any),View_AlphaScroll_0,RenderType_AlphaScroll)),
-    import0.ɵdid(770048,(null as any),0,import12.AlphaScroll,[
+    import0.ɵdid(770048,(null as any),0,import13.AlphaScroll,[
       import0.ElementRef,
-      import13.OrderBy
+      import14.OrderBy
     ]
     ,(null as any),(null as any))
   ]
@@ -339,7 +374,7 @@ function View_AlphaScroll_Host_0(l:any):import0.ɵViewDefinition {
     ck(v,1,0);
   },(null as any));
 }
-export const AlphaScrollNgFactory:import0.ComponentFactory<import12.AlphaScroll> = import0.ɵccf('ion-alpha-scroll',import12.AlphaScroll,View_AlphaScroll_Host_0,{
+export const AlphaScrollNgFactory:import0.ComponentFactory<import13.AlphaScroll> = import0.ɵccf('ion-alpha-scroll',import13.AlphaScroll,View_AlphaScroll_Host_0,{
   listData: 'listData',
   key: 'key',
   itemTemplate: 'itemTemplate',
@@ -347,4 +382,4 @@ export const AlphaScrollNgFactory:import0.ComponentFactory<import12.AlphaScroll>
   headerTemplate: 'headerTemplate'
 }
 ,{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3hpYW90YW5nL0RvY3VtZW50cy9wcm9qZWN0cy1zdm4vcm9vdC9rYW5nYXJvby9wb3VjaC9wb3VjaC1yZXNvdWNlcy9naXR0dXQvaW9uaWMtYWxwaGEtc2Nyb2xsL3NyYy9tb2R1bGVzL2FscGhhLXNjcm9sbC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy94aWFvdGFuZy9Eb2N1bWVudHMvcHJvamVjdHMtc3ZuL3Jvb3Qva2FuZ2Fyb28vcG91Y2gvcG91Y2gtcmVzb3VjZXMvZ2l0dHV0L2lvbmljLWFscGhhLXNjcm9sbC9zcmMvbW9kdWxlcy9hbHBoYS1zY3JvbGwudHMiLCJuZzovLy9Vc2Vycy94aWFvdGFuZy9Eb2N1bWVudHMvcHJvamVjdHMtc3ZuL3Jvb3Qva2FuZ2Fyb28vcG91Y2gvcG91Y2gtcmVzb3VjZXMvZ2l0dHV0L2lvbmljLWFscGhhLXNjcm9sbC9zcmMvbW9kdWxlcy9hbHBoYS1zY3JvbGwudHMuQWxwaGFTY3JvbGwuaHRtbCIsIm5nOi8vL1VzZXJzL3hpYW90YW5nL0RvY3VtZW50cy9wcm9qZWN0cy1zdm4vcm9vdC9rYW5nYXJvby9wb3VjaC9wb3VjaC1yZXNvdWNlcy9naXR0dXQvaW9uaWMtYWxwaGEtc2Nyb2xsL3NyYy9tb2R1bGVzL2FscGhhLXNjcm9sbC50cy5BbHBoYVNjcm9sbF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIlxuICA8c2VjdGlvbiBjbGFzcz1cImFscGhhLWxpc3Qtd3JhcHBlclwiICN3cmFwcGVyPlxuXHQgIDxpb24tbGlzdCBjbGFzcz1cImlvbi1hbHBoYS1saXN0XCIgI2xpc3Q+XG5cdFx0PGlvbi1pdGVtLWRpdmlkZXIgaWQ9XCJzY3JvbGwtbGV0dGVyLeKGkVwiIHN0eWxlPVwiZGlzcGxheTpub25lXCIgKm5nSWY9XCJoZWFkZXJUZW1wbGF0ZSE9bnVsbFwiPuKGkTwvaW9uLWl0ZW0tZGl2aWRlcj5cblx0XHQ8bmctdGVtcGxhdGUgW25nVGVtcGxhdGVPdXRsZXRdPVwiaGVhZGVyVGVtcGxhdGVcIiA+PC9uZy10ZW1wbGF0ZT5cblx0ICAgICAgPGRpdiAqbmdGb3I9XCJsZXQgcm93IG9mIHNvcnRlZEl0ZW1zXCI+XG5cdCAgICAgICAgPGlvbi1pdGVtLWRpdmlkZXIgaWQ9XCJzY3JvbGwtbGV0dGVyLXt7aXRlbS5sZXR0ZXJ9fVwiPnt7aXRlbS5sZXR0ZXJ9fTwvaW9uLWl0ZW0tZGl2aWRlcj5cblx0ICAgICAgICA8bmctdGVtcGxhdGUgW25nVGVtcGxhdGVPdXRsZXRdPVwiaXRlbVRlbXBsYXRlXCIgW25nVGVtcGxhdGVPdXRsZXRDb250ZXh0XT1cInsnaXRlbSc6IGl0ZW0sICdjdXJyZW50UGFnZUNsYXNzJzogY3VycmVudFBhZ2VDbGFzc31cIj5cblx0ICAgICAgICA8L25nLXRlbXBsYXRlPlxuXHQgICAgICA8L2Rpdj5cblx0ICAgIDwvaW9uLWxpc3Q+XG4gICAgPC9zZWN0aW9uPlxuICAgIDx1bCBjbGFzcz1cImlvbi1hbHBoYS1zaWRlYmFyXCIgW25nU3R5bGVdPVwiY2FsY3VsYXRlRGltZW5zaW9uc0ZvclNpZGViYXIoKVwiICNzaWRlYmFyPlxuICAgICAgPGxpICpuZ0Zvcj1cImxldCBhbHBoYSBvZiBhbHBoYWJldFwiIFtoaWRkZW5dPVwiIWFscGhhLmlzQWN0aXZlXCIgW2NsYXNzXT1cInNldEFscGhhQ2xhc3MoYWxwaGEpXCI+XG4gICAgICAgIDxhPnt7YWxwaGEubGV0dGVyfX08L2E+XG4gICAgICA8L2xpPlxuICAgIDwvdWw+IiwiPGlvbi1hbHBoYS1zY3JvbGw+PC9pb24tYWxwaGEtc2Nyb2xsPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7SUNHRTtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7Z0JBQUE7Ozs7O01BQUE7UUFBQTs7TUFBQTs7SUFBQTtLQUFBO2dCQUFBO2dCQUFBO2dCQUFBO2dCQUFBOzs7O0lBQUE7S0FBQTtJQUF5Rjs7Ozs7Ozs7eUJBSThDOzs7O0lBRmxJO0lBQXFDO01BQ25DO1FBQUE7UUFBQTtNQUFBO01BQUE7UUFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO2dCQUFBOzs7OztNQUFBO1FBQUE7O01BQUE7O0lBQUE7S0FBQTtnQkFBQTtnQkFBQTtnQkFBQTtnQkFBQTs7OztJQUFBO0tBQUE7SUFBcUQ7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUFrQztJQUN2RjtnQkFBQTtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO0tBQUE7Z0JBQStDO01BQUE7TUFBQTtJQUFBO0lBQUE7SUFDakM7Ozs7SUFEaUM7SUFBbEM7SUFBYixVQUErQyxVQUFsQyxTQUFiOzs7SUFEa0I7SUFBbEIsU0FBa0IsU0FBbEI7SUFBcUQ7SUFBQTs7Ozs7SUFPeEQ7TUFBQTtRQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUE2RjtJQUMzRjtJQUFHO01BQUE7TUFBQTtJQUFBO0lBQUE7SUFBb0I7Ozs7SUFEVTtJQUEyQjtJQUE5RCxTQUFtQyxVQUEyQixTQUE5RDtJQUNLO0lBQUE7Ozs7Ozs7O0lBZFg7SUFDRTtNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUE2QztJQUM1QztNQUFBO1FBQUE7UUFBQTtNQUFBOztNQUFBO1FBQUE7UUFBQTtNQUFBOztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtnQkFBQTs7Ozs7OztJQUFBO0tBQUE7SUFBdUM7SUFDeEM7Z0JBQUE7OztJQUFBO09BQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUE2RztJQUM3RztrQkFBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQWdFO0lBQzNEO2dCQUFBOzs7O0lBQUE7T0FBQTtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBSU07SUFDRztJQUNGO0lBQ1Y7TUFBQTtRQUFBO1FBQUE7TUFBQTs7TUFBQTtRQUFBO1FBQUE7TUFBQTs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7Z0JBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBbUY7SUFDakY7Z0JBQUE7Ozs7SUFBQTtPQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFFSzs7OztJQVptRDtJQUE1RCxVQUE0RCxTQUE1RDtJQUNhO0lBQWIsVUFBYSxTQUFiO0lBQ1U7SUFBTCxVQUFLLFNBQUw7SUFPMkI7SUFBOUIsVUFBOEIsU0FBOUI7SUFDTTtJQUFKLFVBQUksU0FBSjs7Ozs7SUNiTjtnQkFBQTs7O0lBQUE7S0FBQTs7O0lBQUE7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3hpYW90YW5nL0RvY3VtZW50cy9wcm9qZWN0cy1zdm4vcm9vdC9rYW5nYXJvby9wb3VjaC9wb3VjaC1yZXNvdWNlcy9pb25pYy1hbHBoYS1zY3JvbGwvc3JjL21vZHVsZXMvYWxwaGEtc2Nyb2xsLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL3hpYW90YW5nL0RvY3VtZW50cy9wcm9qZWN0cy1zdm4vcm9vdC9rYW5nYXJvby9wb3VjaC9wb3VjaC1yZXNvdWNlcy9pb25pYy1hbHBoYS1zY3JvbGwvc3JjL21vZHVsZXMvYWxwaGEtc2Nyb2xsLnRzIiwibmc6Ly8vVXNlcnMveGlhb3RhbmcvRG9jdW1lbnRzL3Byb2plY3RzLXN2bi9yb290L2thbmdhcm9vL3BvdWNoL3BvdWNoLXJlc291Y2VzL2lvbmljLWFscGhhLXNjcm9sbC9zcmMvbW9kdWxlcy9hbHBoYS1zY3JvbGwudHMuQWxwaGFTY3JvbGwuaHRtbCIsIm5nOi8vL1VzZXJzL3hpYW90YW5nL0RvY3VtZW50cy9wcm9qZWN0cy1zdm4vcm9vdC9rYW5nYXJvby9wb3VjaC9wb3VjaC1yZXNvdWNlcy9pb25pYy1hbHBoYS1zY3JvbGwvc3JjL21vZHVsZXMvYWxwaGEtc2Nyb2xsLnRzLkFscGhhU2Nyb2xsX0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiXG4gICAgICAgIDxzZWN0aW9uIGNsYXNzPVwiYWxwaGEtbGlzdC13cmFwcGVyXCIgI3dyYXBwZXI+XG4gICAgICAgICAgICA8aW9uLWxpc3QgY2xhc3M9XCJpb24tYWxwaGEtbGlzdFwiICNsaXN0PlxuICAgICAgICAgICAgICAgIDxpb24taXRlbS1kaXZpZGVyIGlkPVwic2Nyb2xsLWxldHRlci3ihpFcIiBzdHlsZT1cImRpc3BsYXk6bm9uZVwiICpuZ0lmPVwiaGVhZGVyVGVtcGxhdGUhPW51bGxcIj7ihpE8L2lvbi1pdGVtLWRpdmlkZXI+XG4gICAgICAgICAgICAgICAgPG5nLXRlbXBsYXRlIFtuZ1RlbXBsYXRlT3V0bGV0XT1cImhlYWRlclRlbXBsYXRlXCI+PC9uZy10ZW1wbGF0ZT5cbiAgICAgICAgICAgICAgICA8ZGl2ICpuZ0Zvcj1cImxldCByb3cgb2Ygc29ydGVkSXRlbXNcIj5cbiAgICAgICAgICAgICAgICAgICAgPGlvbi1pdGVtLWRpdmlkZXIgaWQ9XCJzY3JvbGwtbGV0dGVyLXt7cm93LmxldHRlcn19XCI+e3tyb3cubGV0dGVyfX08L2lvbi1pdGVtLWRpdmlkZXI+XG4gICAgICAgICAgICAgICAgICAgIDxpb24tY29sICpuZ0Zvcj1cImxldCBpdGVtIG9mIHJvdy5ncm91cEl0ZW1zXCIgY29sLTY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8bmctdGVtcGxhdGUgW25nVGVtcGxhdGVPdXRsZXRdPVwiaXRlbVRlbXBsYXRlXCIgW25nVGVtcGxhdGVPdXRsZXRDb250ZXh0XT1cInsnaXRlbSc6IGl0ZW0sICdjdXJyZW50UGFnZUNsYXNzJzogY3VycmVudFBhZ2VDbGFzc31cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvbmctdGVtcGxhdGU+XG4gICAgICAgICAgICAgICAgICAgIDwvaW9uLWNvbD5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvaW9uLWxpc3Q+XG4gICAgICAgIDwvc2VjdGlvbj5cbiAgICAgICAgPHVsIGNsYXNzPVwiaW9uLWFscGhhLXNpZGViYXJcIiBbbmdTdHlsZV09XCJjYWxjdWxhdGVEaW1lbnNpb25zRm9yU2lkZWJhcigpXCIgI3NpZGViYXI+XG4gICAgICAgICAgICA8bGkgKm5nRm9yPVwibGV0IGFscGhhIG9mIGFscGhhYmV0XCIgW2hpZGRlbl09XCIhYWxwaGEuaXNBY3RpdmVcIiBbY2xhc3NdPVwic2V0QWxwaGFDbGFzcyhhbHBoYSlcIj5cbiAgICAgICAgICAgICAgICA8YT57e2FscGhhLmxldHRlcn19PC9hPlxuICAgICAgICAgICAgPC9saT5cbiAgICAgICAgPC91bD4iLCI8aW9uLWFscGhhLXNj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
